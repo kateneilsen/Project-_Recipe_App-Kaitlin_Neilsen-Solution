@@ -1,8 +1,8 @@
 import React from "react";
 import RecipeRow from "./RecipeRow";
-import "./App.css";
+import RecipeCreate from "./RecipeCreate";
 
-function RecipeList({ recipes, deleteRecipe }) {
+function RecipeList({ recipes, setRecipes, deleteRecipe }) {
   // TODO: Display the list of recipes using the structure of table that is provided.
   // TODO: Create at least one additional component that is used by this component.
   // TODO: Each recipe row must have a delete button - <button name="delete">Delete</button> - that deletes the post when clicked
@@ -29,6 +29,7 @@ function RecipeList({ recipes, deleteRecipe }) {
           ))}
         </tbody>
       </table>
+      <RecipeCreate recipes={recipes} setRecipes={setRecipes} />
     </div>
   );
 }
