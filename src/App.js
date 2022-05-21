@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import RecipeCreate from "./RecipeCreate";
 import RecipeList from "./RecipeList";
 import RecipeData from "./RecipeData";
 
@@ -27,7 +26,6 @@ function App() {
         setRecipes={setRecipes}
         deleteRecipe={deleteRecipe}
       />
-      <RecipeCreate setRecipes={setRecipes} />
     </div>
   );
 }
